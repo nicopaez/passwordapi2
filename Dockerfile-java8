@@ -1,0 +1,3 @@
+FROM openjdk:8-jre-alpine
+COPY target/passwordapi-0.1.0.jar /app.jar 
+CMD ["/usr/bin/java", "-jar", "-Dspring.profiles.active=default", "/app.jar"]
